@@ -14,7 +14,7 @@ const PORT = process.env.PORT || 3000;
 const userNicknames = new Map();
 
 // --- IMPORTANT: Redis Configuration ---
-const redisUrl = 'redis://default:xb3nujDp9C24bsxAsmgmHR7OySwPrBlS@redis-10501.c257.us-east-1-3.ec2.redns.redis-cloud.com:10501'; // 👈 Make sure this is your correct URL
+const redisUrl = 'redis://default:USE YOUR PASSWORD@redis-10501.c257.us-east-1-3.ec2.redns.redis-cloud.com:10501'; // 👈 Make sure this is your correct URL
 
 // Serve static files from the 'public' folder
 app.use(express.static(path.join(__dirname, 'public')));
@@ -141,5 +141,6 @@ async function main() {
     console.error('❌ Failed to connect to Redis or start the server:', err);
   }
 }
+
 
 main();
