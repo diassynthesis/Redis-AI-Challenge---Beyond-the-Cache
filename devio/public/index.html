@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redis Pro Chat</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="app-layout">
+        <div id="login-container" class="login-container">
+            <div class="login-box">
+                <h1>Join Chat</h1>
+                <form id="login-form">
+                    <input id="username-input" autocomplete="off" placeholder="Enter your nickname" required />
+                    <button type="submit">Join</button>
+                </form>
+            </div>
+        </div>
+
+        <div id="chat-container" class="chat-container">
+            <header>
+                <h1>Redis Pro Chat</h1>
+                <div id="controls">
+                    <p id="typing-indicator"></p>
+                    <button id="clear-chat-btn" title="Clear Chat History">Clear Chat</button>
+                    <button id="disconnect-btn" title="Disconnect from Chat">Disconnect</button>
+					
+                    <button id="reset-btn" title="Reset all server data">Reset Server</button>
+                </div>
+            </header>
+            <ul id="messages"></ul>
+            <div id="form-container">
+                <form id="chat-form" action="">
+                    <input id="chat-input" autocomplete="off" placeholder="Connecting..." disabled /><button disabled>Send</button>
+                </form>
+            </div>
+        </div>
+        
+        <div id="status-area">
+            <h2>Online (<span id="user-count">0</span>)</h2>
+            <ul id="online-users-list"></ul>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/script.js"></script>
+</body>
+</html>
