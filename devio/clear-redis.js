@@ -2,7 +2,7 @@ const { createClient } = require('redis');
 
 // --- IMPORTANT ---
 // Make sure this is the same Redis URL from your server.js
-const redisUrl = 'redis://default:USE YOUR PASSWORD@redis-12382.c16.us-east-1-2.ec2.redns.redis-cloud.com:12382';
+const redisUrl = 'redis://default:USE YOUR PASSWORD@redis-10501.c257.us-east-1-3.ec2.redns.redis-cloud.com:10501';
 
 async function clearData() {
   console.log('Connecting to Redis to clear old data...');
@@ -25,3 +25,4 @@ async function clearData() {
 
 
 clearData();
+
