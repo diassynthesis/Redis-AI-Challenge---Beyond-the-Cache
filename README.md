@@ -77,6 +77,16 @@ A live version of this application is deployed here:
 
 ---
 
+---
+
+## Future Enhancements & To-Do
+
+This project provides a solid foundation for a real-time chat application, but there are many exciting features that could be added in the future to make it even more powerful.
+
+* **Implement Full-Text Search:** The next major feature would be to integrate **RediSearch**. This would allow users to perform fast, complex searches across the entire chat history, making it easy to find old messages and conversations.
+
+* **Integrate a True AI Chatbot:** While the current `@bot` is a fun persona, a future version could integrate with a real Large Language Model (LLM) via an API. This would enable the bot to have intelligent conversations, answer user questions, or even provide real-time chat moderation.
+
 ## License
 
 This project is licensed under the **MIT License**. See the `LICENSE` file for details.
